@@ -1,8 +1,6 @@
 # 24. Find the intersection of two sets.
 
-set1 = set(map(int, input("Enter elements of first set: ").split()))
-set2 = set(map(int, input("Enter elements of second set: ").split()))
+set1 = set(map(int, input("Enter first set: ").split()))
+set2 = set(map(int, input("Enter second set: ").split()))
 
-intersection = set1.intersection(set2)
-
-print("Intersection:", intersection)
+print("Intersection:", set1 & set2)
