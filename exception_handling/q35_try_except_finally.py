@@ -1,9 +1,9 @@
-# 35. Demonstrate the use of try, except, and finally.
+# 35. Demonstrate try, except, and finally.
 
 try:
     number = int(input("Enter a number: "))
-    print("Number:", number)
-except ValueError:
-    print("Invalid input. Please enter a number.")
+    print(number)
+except:
+    print("Invalid input")
 finally:
-    print("This block always executes.")
+    print("Program finished")
