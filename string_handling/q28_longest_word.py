@@ -1,0 +1,15 @@
+# 28. Find the longest word in a given sentence.
+
+sentence = input("Enter a sentence: ")
+words = sentence.split()
+
+if not words:
+    print("No words entered.")
+else:
+    longest = words[0]
+
+    for word in words:
+        if len(word) > len(longest):
+            longest = word
+
+    print("Longest word:", longest)
