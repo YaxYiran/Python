@@ -3,11 +3,13 @@
 sentence = input("Enter a sentence: ").lower()
 words = sentence.split()
 
-word_count = {}
+count = {}
 
 for word in words:
-    word_count[word] = word_count.get(word, 0) + 1
+    if word in count:
+        count[word] += 1
+    else:
+        count[word] = 1
 
-print("Word occurrences:")
-for word, count in word_count.items():
-    print(word, ":", count)
+for word in count:
+    print(word, ":", count[word])
