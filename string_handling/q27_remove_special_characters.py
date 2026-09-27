@@ -4,7 +4,7 @@ text = input("Enter a string: ")
 result = ""
 
 for character in text:
-    if character.isalnum() or character.isspace():
+    if character.isalnum() or character == " ":
         result += character
 
-print("String without special characters:", result)
+print(result)
