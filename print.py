@@ -1,1 +1,3 @@
-print("wassup")
+# 1. Print "Hello, World!"
+
+print("Hello, World!")
