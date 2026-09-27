@@ -1,9 +1,7 @@
 # 29. Replace a substring within a given string.
 
 text = input("Enter a string: ")
-old = input("Enter the substring to replace: ")
-new = input("Enter the replacement: ")
+old = input("Enter substring to replace: ")
+new = input("Enter new substring: ")
 
-result = text.replace(old, new)
-
-print("Updated string:", result)
+print(text.replace(old, new))
