@@ -4,9 +4,9 @@ class NegativeNumberError(Exception):
     pass
 
 
-number = float(input("Enter a number: "))
+number = int(input("Enter a number: "))
 
 if number < 0:
-    raise NegativeNumberError("Negative numbers are not allowed.")
+    raise NegativeNumberError("Number cannot be negative")
 
 print("Number:", number)
